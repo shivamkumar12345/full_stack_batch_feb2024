@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY FIRST PROJECT</title>
+    <!-- internal styling -->
+    <style> 
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            font-weight: 600;
+            font-size: 2em;
+            font-family:Arial, Helvetica, sans-serif;
+            color: aqua;
+        }
+        img{
+            border-radius: 50%;
+        }
+
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"/> -->
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        
+        <a href="#">About</a>
+        
+        <a href="#">Contact</a>
+    </nav>
+    <!-- to show my profile -->
+    <img src="img/profile.jpeg" alt="my_profile"  style="height: 150px; width: 200px;"/>
+    
+    <!-- about me -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita et blanditiis incidunt eos, natus beatae quibusdam nesciunt praesentium officiis exercitationem ipsam optio totam illum cumque ab omnis dolore neque delectus.</p>
+
+    <table border="2" cellpadding ="20px" cellspacing ="10px">
+        <thead> <!-- first row to show header-->
+            <th>MON</th> <!--to show column in header-->
+            <th>TUE</th> 
+            <th>WED</th> 
+            <th>THR</th> 
+            <th>FRI</th>
+            <th>SUT</th> 
+            <th>SUN</th> 
+        </thead>
+        <tr> <!-- to show routine first column-->
+            <td>
+                poha
+            </td>
+            <td>
+                paratha
+            </td>
+            <td>
+                bread
+            </td>
+            <td>
+                poha
+            </td>
+            <td>
+                paratha
+            </td>
+            <td>
+                bread
+            </td>
+            <td>
+                puri-subji
+            </td>
+        </tr>
+        
+        <tr> <!-- to show routine first column-->
+            <td>
+                poha
+            </td>
+            <td>
+                paratha
+            </td>
+            <td>
+                bread
+            </td>
+            <td>
+                poha
+            </td>
+            <td>
+                paratha
+            </td>
+            <td>
+                bread
+            </td>
+            <td>
+                puri-subji
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                poha
+            </td>
+            <td>
+                paratha
+            </td>
+            <td>
+                bread
+            </td>
+            <td>
+                poha
+            </td>
+            <td>
+                paratha
+            </td>
+            <td>
+                bread
+            </td>
+            <td>
+                puri-subji
+            </td>
+        </tr>
+    </table>
+
+    <!-- to show hobbies -->
+    <ul type="circle">
+        <strong>Hobiles </strong>
+        <li>Badminton</li>
+        <li>Books-reading</li>
+        <li>Cricket</li>
+        <li>Movies</li>
+    </ul>
+    <!-- to create contact form -->
+    <form>
+        <fieldset>
+            <legend>Important</legend>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your Name"/>
+
+            <br/>
+            <label for="mobile">Mobile</label>
+            <input id="mobile" type="mobile" placeholder="Enter your Mobile"/>
+        </fieldset>
+        <fieldset>
+            <legend>Optional</legend>
+            <span>choose your course?</span>
+            <!-- <input type="radio" name="course"/>C++
+            
+            <input type="radio" name="course"/>Java
+            
+            <input type="radio" name="course"/>Python -->
+            
+            <select>
+                <option>C++</option>
+                <option>Java</option>
+                <option>Python</option>
+            </select>
+
+            
+        </fieldset>
+    </form>
+
+</body>
+</html>
