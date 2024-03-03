@@ -4,24 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <link rel="stylesheet" href="./style.css"  />
+   <!-- <link rel="stylesheet" href="./style.css"  /> -->
+   <style>
+        #header_id{
+           background-color: aqua; 
+        }
+        header h1{
+            color: blue;
+            font-size: 32px;
+            /* font-style: italic; */
+            font-family: cursive;
+        }
+        section{
+            width: 600px;
+            background-color: aquamarine;
+        }
+        aside{
+            background-color: rgb(107, 160, 107);
+            width: 200px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        /* a:link{
+            color: black;
+            text-decoration: none; 
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: yellow;
+            font-size: large;
+        } */
+        /* a:visited{
+            color: rgb(0, 255, 38);
+            text-decoration: underline;
+        } */
+        a{
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        nav{
+            float: right;
+        }
+        #header_id h1{
+            float: left;
+        }
+        /* .clearfix{
+            clear: both;
+        } */
+        header::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .about_class{
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        
+   </style>
 </head>
 <body>
-    <header class="header_class">
-        <h1 id="header_heading">Welcome to my web Page</h1>
+    <header class="header_class" id="header_id">
+        <h1>Welcome to my web Page</h1>
         <nav>
-            <a href="#">Home</a>
+            <a href="https://www.google.com" target="_blank">Home</a>
             <a href="#">Contact</a>
             <a href="#">About</a>
             <a href="#">Course</a>
         </nav>
+        <!-- <div class="clearfix"></div> -->
     </header>
     <section class="about_class">
-        <article 
+        <header class="header_class" > 
             <h1>Web Dev Batch using NodeJS </h1>
             <img src="./img/profile.jpeg" height="100px" width="100px"/>
             <p>I am a Full Stack Developer (MERN)</p>
-        </article>
+        </header>
         <article>
             <h2>About Coding Blocks!</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque explicabo iste voluptates itaque! Ducimus quae, consectetur libero, labore nulla quos repudiandae dolor quaerat nisi voluptatem debitis quo voluptatum possimus!</p>
@@ -30,7 +91,6 @@
                 <!-- <span>Our Courses</span> -->
                 <li>C++</li>
                 <li>Java</li>
-                <span>Hello world</span>
                 <li>MERN</li>
                 <li>Python</li>
             </ol>       
@@ -55,11 +115,11 @@
     <footer>
         &copy;codingblocks, Lucknow-2024
     </footer>
-    <div>
+    <!-- <div>
         <p>hi</p>
         <section>
             <p>hello</p>
         </section>
-    </div>
+    </div> -->
 </body>
 </html>

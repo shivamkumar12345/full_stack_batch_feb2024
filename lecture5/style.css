@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 10px;
+}
+/* h1{
+    margin: 11px;
+} */
+.h1_class{
+    margin:12px !important;
+}
+#h1_id{
+    margin: 16px;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.parent{
+    position: absolute;
+    top:30%;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+
+    h1{
+        position: relative;
+        top: 150px;
+    }
+}
+.flexbox{
+    width: 400px;
+    height: 300px;
+    background-color: aqua;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
