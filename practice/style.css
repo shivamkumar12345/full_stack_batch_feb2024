@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#heading_id{
+    font-size: 32px;
+    font-family: cursive;
+    color: blue;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+article{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 2px solid rgb(15, 15, 15);
+    img{
+        border-radius: 50%;
+    }
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(255, 64, 0);
+        text-overflow:ellipsis;
+        word-wrap: break-word;
+        text-wrap:wrap;
+        overflow:hidden;
+        white-space:nowrap;
+
+    }
+}
+section{
+    width: 400px;
+    height: 450px;
+}
