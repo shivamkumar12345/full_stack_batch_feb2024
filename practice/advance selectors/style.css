@@ -1,0 +1,72 @@
+h1{
+    color: red;
+}
+h1::first-letter{
+    font-size: 36px;
+    color: yellow;
+}
+p{
+    width: 400px;
+    border: 2px solid black;
+}
+p::first-line{
+    
+    font-weight: 800;
+}
+/* input[type="text"]{
+    background-color: aqua;
+} */
+/* label ~ input {
+    background-color: red;
+} */
+input:focus{
+    background-color: aquamarine;
+}
+input:disabled{
+    background-color: red;
+}
+
+/* a[href="www.codingblocks.com" ]{
+    font-size: 32px;
+} */
+a ~ a{
+    color: black;
+}
+
+a:visited{
+    color: red;
+    text-decoration: none;
+}
+
+/* ul > li{
+        color: rgb(0, 255, 115);
+} */
+
+li + li{
+    font-size: 32px;
+}
+/* li:first-of-type{
+    color: aqua;
+} */
+
+li:nth-child(3n+1){
+    color: aqua;
+}
+li::marker{
+    content: "😊";
+}
+
+.contact_info li::marker{
+    content: "";
+}
+.contact_info li:first-of-type::before{
+    content: "🚩";
+}
+.contact_info li:nth-child(even)::before{
+    content: "🚞";
+}
+.span::first-letter{
+    font-size: larger;
+    color: aqua;
+    text-transform: uppercase;
+}
