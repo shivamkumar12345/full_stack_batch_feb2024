@@ -1,0 +1,23 @@
+h1{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 30%;
+    font-size: 32px;
+    text-shadow: 1px 2px 5px red;
+}
+h1:hover{
+    /* transform: rotate3d(60deg); */
+    /* transform: scale(2.0); */
+    transform: translateX(-300px);
+}
+img{
+    height: 250px;
+    width: 250px;
+    transition: 1s;
+}
+img:hover{
+    /* transform: skewX(-60deg); */
+   border-radius: 50%;
+
+}

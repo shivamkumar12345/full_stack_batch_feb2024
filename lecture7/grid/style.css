@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-areas: "header header header"
+                    "scroll main ad1"
+                    "scroll main ad2"
+                    "footer footer footer";
+}
+div{
+
+    border: 2px solid black;
+}
+.header{
+    grid-area: header;
+}
+.footer{
+    grid-area: footer;
+}
+.scroll_content{
+    grid-area: scroll;
+}
+.main{
+    grid-area: main;
+}
+.ad1{
+    grid-area: ad1;
+}
+.ad2{
+    grid-area: ad2;
+}
