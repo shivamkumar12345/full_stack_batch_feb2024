@@ -1,0 +1,25 @@
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 10px auto 10px;
+    border: 2px solid black;
+    animation-name: rotate_y;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+/* .container:hover{
+    transform: rotateY(60deg);
+} */
+@keyframes rotate_y {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(60deg);
+    }
+}

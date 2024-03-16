@@ -1,0 +1,67 @@
+.spinner{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 10px auto 10px;
+    /* border: 2px solid black; */
+    border-top: 8px solid white;
+    border-bottom:8px solid blue ;
+    border-left: 8px solid blue;
+    border-right: 8px solid #4306fa;
+    border-radius: 50%;
+    animation-name: spinner_ball,translate_ball;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes translate_ball {
+    0%{
+        margin-left: 10px;
+        margin-right: auto;
+    }
+    50%{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    100%{
+        margin-left: auto;
+        margin-right: 10px;
+    }
+}
+@keyframes spinner_ball{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    10%{
+        transform: rotateZ(36deg);
+    }
+    20%{
+        transform: rotateZ(72deg);
+    }
+    30%{
+        transform: rotateZ(108deg);
+    }
+    40%{
+        transform: rotateZ(144deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    60%{
+        transform: rotateZ(216deg);
+    }
+    70%{
+        transform: rotateZ(252deg);
+    }
+    80%{
+        transform: rotateZ(288deg);
+    }
+    90%{
+        transform: rotateZ(324deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
