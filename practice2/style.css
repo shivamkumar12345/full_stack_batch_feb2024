@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}nav{
+    background-color: rgb(63, 63, 168);
+    padding: 12px;
+}
+a{
+    color: red;
+    font-size: 24px;
+    margin-right: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.home{
+    color: white;
+}
+#home_id{
+    color: aqua;
+}
+section{
+    width: 350px;
+    border: 2px solid black;
+    background: url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg");
+    object-fit: cover;
+    background-size: 100%;
+}
+section p{
+    color: aquamarine;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-wrap: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+p::first-letter{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+section div > ol {
+    font-size: 16px;
+    color: rgb(19, 209, 209);
+}
+h1{
+    color: black;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: italic;
+    font-family:sans-serif;
+    text-shadow: 1px 2px 5px red;
+    text-align: center;
+    text-transform: lowercase;
+    
+}
+button{
+    padding: 10px;
+    margin: 12px;
+    border-radius: 15px;
+}
+
+li~li{
+    color: yellow;
+}
+input[placeholder="Enter a name"]{
+    background-color: aqua;
+}
+input:focus{
+    background-color: azure;
+}
+a:hover{
+    color: rgb(0, 255, 26);
+}
+/* a:first-child{
+    font-size: 16px;
+} */
+a:nth-child(2){
+    font-size: 16px;
+}
+input::before{
+    content: "Required";
+    color: red;
+    display: block;
+    margin: 20px;
+}

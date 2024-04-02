@@ -38,3 +38,40 @@ ul{
     margin: 30px 50px;
 }
 
+/* header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    nav{
+        margin-right: 30px;
+    }
+} */
+
+/* header {
+    background-color: aqua;
+    nav{
+        float: right;
+        padding-top: 10px;
+        font-size: 24px;
+    }
+    h1{
+        float: left;
+    }
+}
+header::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: aqua;
+    h1{
+        margin-right: auto;
+    }
+}

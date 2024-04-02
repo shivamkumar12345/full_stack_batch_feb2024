@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- my heading-->
+        <h1 >My HTML Page</h1>
+        <nav>
+            <a class="home" id="home_id" href="https://www.codingblocks.com" target="_blank">Home</a>
+            <a class="home" href="#">Contact</a>
+            <a href="#">Course</a>
+        </nav>
+    </header>
+    <section>
+        <p>Lorem ipsum dolor, sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos natus impedit! Id accusantium, possimus sapiente necessitatibus qui perferendis. Totam. consectetur adipisicing elit. Eum aliquid illo nolla quae corrupti ipsa colpa delectus provident aut iure?</p>
+        <ol>
+            <li>Lucknow</li>
+            <li><strong>Patna</strong></li>
+            <li value="5">Delhi</li>
+            
+            <span>Home town</span>
+            <li>Bengaluru</li>
+        </ol>
+        <div>
+            <ol>
+                <li>C++</li>
+                <li><strong>Java</strong></li>
+                <li value="5">Python</li>
+                <li>MERN</li>
+            </ol>
+        </div>
+         
+    </section>
+    <table border="2" cellspacing="10" cellpadding="10">
+        <thead>
+            <th>
+                Mon
+            </th>
+            <th>
+                Wed
+            </th>
+            <th>
+                Fri
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">C++</td>
+                <td>Python</td>
+                <td>Java</td>
+            </tr>
+            
+            <tr>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td>JavaScript</td>
+            </tr>
+        </tbody>
+    </table>
+    <form>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter a name" id="name"/>
+        </div>
+        <div>
+            <label for="pass">Name</label>
+            <input type="password" placeholder="Enter a password" id="pass"/>
+        </div>
+        <div>
+            <label for="course">Course</label>
+            <input type="checkbox"/>C++
+            <input type="checkbox"/>MERN
+        </div>
+        <div>
+            <label for="Enrolled">Enrolled</label>
+            <input type="radio" name="enrolled"/>Yes
+            <input type="radio" name="enrolled"/>No
+        </div>
+        <div>
+            <label>Branch</label>
+            <select>
+                <option>B.Tech</option>
+                
+                <option>M.Tech</option>
+                
+                <option>MCA</option>
+            </select>
+        </div>
+        <div>
+            <label>Comments</label>
+            <textarea width="100px" height="100px"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div>
+        <img width="100px" src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg" alt="my_image"/>
+    </div>
+</body>
+</html>

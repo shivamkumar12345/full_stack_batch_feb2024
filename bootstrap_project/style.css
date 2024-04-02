@@ -1,0 +1,43 @@
+
+nav{
+    background-color: lightblue;
+}
+#about{
+    button{
+        border-color: blue;
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 24px;
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
+    button:hover{
+        background-color: blue;
+        a{
+            color: white;
+        }
+    }
+}
+.slider-img img{
+    border-radius: 15px;
+    opacity: 80%;
+}
+#project{
+    background-color: rgb(242, 241, 239);
+}
+.card:hover{
+    box-shadow: 1px 1px 10px rgb(183, 181, 181);
+    z-index: 10;
+    transform: scale(1.01);
+}
+.back-img{
+    opacity: 80%;
+}
+.contact-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-resolution: 100%;
+}
