@@ -41,3 +41,11 @@ function add(){
     return 2+3;
 }
 console.log( add.toString());
+
+// split()
+s= "hello_world";
+
+console.log(s.split("_"));
+
+let birth = "20/30/2001";
+console.log( birth.split("/")[2]);
