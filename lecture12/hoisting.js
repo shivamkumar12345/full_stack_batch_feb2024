@@ -5,9 +5,10 @@ var a=10;
 add();
 
 function add(){
-    console.log("this is add fun");
+    let z= 30;
+    console.log("this is add fun "+ z);
 }
-myfun();
-const myfun = function(){
-    console.log("without hoisting");
-}
+// myfun();
+// const myfun = function(){
+//     console.log("without hoisting");
+// }

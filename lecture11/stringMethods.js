@@ -5,6 +5,7 @@ console.log(typeof s);
 //     console.log(s[i]);
 // }
 
+
 //substring(start,end_idx)
 console.log(s.substring(2,6));
 
@@ -49,3 +50,7 @@ console.log(s.split("_"));
 
 let birth = "20/30/2001";
 console.log( birth.split("/")[2]);
+
+// includes used to check if substr is present or not
+s="coding blocks";
+// s.includes()

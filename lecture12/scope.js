@@ -4,7 +4,7 @@ if(true){
 {
     let y=10;
 }
-
+// console.log(y);
 
 function scope(){
     const y=20;
@@ -21,7 +21,7 @@ function fun(){
     var x=10;
     console.log(x);
     if(true){
-        let x= 20;
+        var x= 20;
         console.log(x);
     }
     console.log(x);

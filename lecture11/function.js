@@ -5,8 +5,8 @@ function add(){
 console.log(add());
 
 //function with param
-function sub(a,b,c =0){ // c is default param of sub fun
+function sub(a,b,c =1){ // c is default param of sub fun
     console.log("hi" );
     return a-b-c;
 }
-console.log(sub(5,2));
+console.log(sub(5,2,0));

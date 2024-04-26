@@ -29,3 +29,15 @@ let a2 = a.filter(function(val,idx){
     return val%2==0;
 });
 console.log(a2);
+
+a=[1,5,8,2,9,6];
+
+let ans =a.filter(function(val){
+    return val%2==0;
+});
+let multiply =ans.reduce(function(mul,val){
+    mul*= val;
+    return mul;
+},1);
+
+console.log(ans);
