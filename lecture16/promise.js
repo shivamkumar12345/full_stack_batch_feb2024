@@ -1,16 +1,18 @@
-function download(){
+async function download(){
     return new Promise(
         (resolve,reject)=>{
-            setTimeout(()=>{
+            let x= setTimeout(()=>{
                 resolve("hey your video downloaded");
             },2000);
+            
+            clearTimeout(x,1000);
             // 
             // reject(" its reject");
         }
     )
 }
 
-const p =download();
+const p = await download();
 
 p.then((res)=>{
     console.log("thanks " +res);

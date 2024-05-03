@@ -1,0 +1,17 @@
+h1{
+    color: blue;
+    font-size: 24px;
+    text-align: center;
+}
+.h1_red{
+    color: red;
+    font-size: 32px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.h1_green{
+    color: rgb(0, 255, 110);
+    font-size: 32px;
+    text-align: right;
+    text-transform: uppercase;
+}
