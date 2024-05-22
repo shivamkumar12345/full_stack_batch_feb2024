@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <!-- add navbar -->
+    <%- include('./partials/navbar.ejs') %>
+
+    <h1>my first html rendering </h1>
+    <%= Math.random()*100 %>
+
+    <% if(Math.floor(Math.random()*100)%2 ==0) { %>
+
+            <h2>Requested by <%= query.q %> </h2>
+    <% } %>
+
+
+    <!-- for loop -->
+    <% fruits.map(val => {  %>
+            <li> <%= val %> </li>
+   <% }) %>
+     
+  
+</body>
+</html>
