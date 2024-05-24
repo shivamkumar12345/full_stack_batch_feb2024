@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Comments</h1>
+
+    <form action="/edit-comment" method="post">
+        <fieldset>
+            <legend>PATCH</legend>
+            <input name="id" value="<%= myblog.id %>" style="display: none;">
+
+            <label for="name">Name: </label>
+            <input placeholder="Enter Name" value=<%= myblog.Name %> name="Name" >
+
+            <label>Comments: </label>
+            <textarea placeholder="Add Comments here ..." value="" name="comments"> <%= myblog.comments %> </textarea>
+            <button type="submit">Edit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

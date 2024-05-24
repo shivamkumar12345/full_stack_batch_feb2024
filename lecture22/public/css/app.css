@@ -4,3 +4,10 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: aquamarine;
 }
+
+.blog{
+    width: 300px;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    
+}

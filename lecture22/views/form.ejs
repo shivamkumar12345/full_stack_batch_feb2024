@@ -11,11 +11,11 @@
     <form action="/post-comment" method="post">
         <fieldset>
             <legend>GET</legend>
-            <label>Name: </label>
-            <input placeholder="Enter Name" value={<%= data.name %>}>
+            <label for="name">Name: </label>
+            <input placeholder="Enter Name" value="" name="Name" >
 
             <label>Comments: </label>
-            <textarea placeholder="Add Comments here ..." value={<%= data.comments %>} ></textarea>
+            <textarea placeholder="Add Comments here ..." value="" name="comments"></textarea>
             <button type="submit">Submit</button>
         </fieldset>
     </form>

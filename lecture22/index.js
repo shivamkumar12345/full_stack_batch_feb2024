@@ -12,24 +12,59 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // creating array
 const fruits = ["apple","orange","grapes"];
 
-const data= {name:"", comments:""};
+let data= [];
+
 app.get("/",(req,res)=>{
     const {query} = req;
     // console.log(query,req,res);
-    res.render('index',{query,fruits});
+    res.render('index',{data})
 });
 
 app.post("/post-comment",(req,res)=>{
-    console.log(req,"post comment");
+    const userComments = req.body;
+
+    data.push({...userComments, id: Math.floor(Math.random()*100000)});
+    // console.log(data);
     res.redirect("/");
     
+})
+app.get("/myblog/:id",(req,res)=>{
+    const {id} = req.params;
+
+    const myblog = data.filter(item=> item.id == id)[0];
+
+    res.render('myblog',{myblog})
+
 })
 app.get("/add-comments",(req,res)=>{
     
     res.render('form',{data});
 })
 
+app.get('/edit/blog/:id',(req,res)=>{
+    const {id} = req.params;
+    console.log(id);  
+    const myblog = data.filter(item=> item.id == id)[0];
+    res.render('edit',{myblog})    
 
+})
+app.post("/edit-comment",(req,res)=>{
+    const {id} = req.body;
+
+//   console.log(userComments,"edit commit");
+    data = data.filter(item => {
+        if(item.id == id){
+                return false;
+        }else{
+            return true;
+        }
+    });
+
+    data.push(req.body);
+  
+    res.redirect("/");
+    
+})
 
 
 
