@@ -8,7 +8,7 @@
 <body>
     <h1>Edit Comments</h1>
 
-    <form action="/edit-comment" method="post">
+    <form action="/edit-comment?_method=PATCH" method="post">
         <fieldset>
             <legend>PATCH</legend>
             <input name="id" value="<%= myblog.id %>" style="display: none;">

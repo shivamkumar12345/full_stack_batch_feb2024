@@ -12,11 +12,16 @@
 
     <% data.map(item=>{ %>
         <div class="blog"> 
-                <h2><%= item.Name %></h2>
+                <h2><%= item.name %></h2>
                 <p> <%= item.comments %> </p>
 
-                <a href="/myblog/<%=item.id%>"> show my blog</a>
-                <a href="/edit/blog/<%=item.id%>"> edit the blog</a>
+                <a href="/myblog/<%=item._id%>"> show my blog</a>
+                <a href="/edit/blog/<%=item._id%>"> edit the blog</a>
+
+               
+                <form action="/blog/delete/<%=item._id%>?_method=DELETE" method="post">
+                    <button type="submit">delete</button>
+                </form>
         </div>
 
     <% }) %>
