@@ -33,7 +33,6 @@ let data= [];
 
 app.get("/",async (req,res)=>{
     const {query} = req;
-    // console.log(query,req,res);
     const data = await User.find();
     res.render('index',{data})
 });
@@ -46,7 +45,6 @@ app.post("/post-comment",async (req,res)=>{
     }catch(err){
         console.log(err ,"not abled to insert data");
     }
-    // console.log(data);
     res.redirect("/");
     
 })
@@ -54,7 +52,7 @@ app.get("/myblog/:id",async(req,res)=>{
     const {id} = req.params;
 
     const myblog = await User.findOne({_id:id});
-    console.log(myblog);
+   
 
     res.render('myblog',{myblog})
 
@@ -64,35 +62,39 @@ app.get("/add-comments",(req,res)=>{
     res.render('form',{data});
 })
 
-app.get('/edit/blog/:id',(req,res)=>{
+app.get('/edit/blog/:id',async(req,res)=>{
     const {id} = req.params;
     console.log(id);  
-    const myblog = data.filter(item=> item.id == id)[0];
-    res.render('edit',{myblog})    
+    try{
+
+        const myblog = await User.findById(id);
+        res.render('edit',{myblog})    
+    }catch(err){
+        console.log(err);
+    }
+ 
 
 })
-app.patch("/edit-comment",(req,res)=>{
-    const {id} = req.body;
+app.patch("/edit-comment",async(req,res)=>{
+    const {id,name,comments} = req.body;
+=
+    try{
+        await User.findByIdAndUpdate(id,{name,comments});
+        res.redirect("/");
+    }catch(err){
+        console.log(err);
+    }  
+});
 
-//   console.log(userComments,"edit commit");
-    data = data.filter(item => {
-        if(item.id == id){
-                return false;
-        }else{
-            return true;
-        }
-    });
-
-    data.push(req.body);
-  
-    res.redirect("/");
-    
-})
-app.delete('/blog/delete/:id',(req,res)=>{
+app.delete('/blog/delete/:id',async(req,res)=>{
     const {id} = req.params;
    
-    data = data.filter(item=> item.id != id);
-    res.redirect('/');
+    try{
+       await User.findByIdAndDelete(id);
+       res.redirect('/');
+    }catch(err){
+        console.log(err);
+    }
 })
 
 

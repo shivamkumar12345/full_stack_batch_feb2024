@@ -1,0 +1,20 @@
+<main class="d-flex justify-content-around flex-wrap">
+   
+    <% products.map((item =>{  %>
+    <div class="card mb-4" style="width: 18rem;">
+        <img src=<%=item.images %> class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%= item.name %></h5>
+          <p class="card-text"> <%= item.description %></p>
+          <a href="/add-product" class="btn btn-primary">Add to Cart</a>
+          <a href="/product/detail/<%=item._id %>" class="btn btn-secondary">Details</a>
+        
+          <a href="/add-review/<%=item._id %>" class="btn btn-warnning">Reviews</a>
+        
+        </div>
+    </div>
+    
+    <% })) %>
+
+
+</main>

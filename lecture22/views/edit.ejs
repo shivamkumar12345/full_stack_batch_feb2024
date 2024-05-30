@@ -11,10 +11,10 @@
     <form action="/edit-comment?_method=PATCH" method="post">
         <fieldset>
             <legend>PATCH</legend>
-            <input name="id" value="<%= myblog.id %>" style="display: none;">
+            <input name="id" value="<%= myblog._id %>" style="display: none;">
 
             <label for="name">Name: </label>
-            <input placeholder="Enter Name" value=<%= myblog.Name %> name="Name" >
+            <input placeholder="Enter Name" value=<%= myblog.name %> name="name" >
 
             <label>Comments: </label>
             <textarea placeholder="Add Comments here ..." value="" name="comments"> <%= myblog.comments %> </textarea>
