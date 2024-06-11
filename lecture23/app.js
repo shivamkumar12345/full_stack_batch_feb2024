@@ -1,8 +1,12 @@
 const express = require("express");
 const app = express();
+const ejsMateEngine = require("ejs-mate")
 const path = require("path")
-const router= require('./routers/product')
+const productRouter= require('./routers/product')
+const reviewRouter = require('./routers/review')
 const products = require('./db')
+
+app.engine('ejs',ejsMateEngine)
 app.set('view engine','ejs')
 app.set('views',path.join(__dirname,'views'))
 app.use(express.static(path.join(__dirname,'public')))
@@ -84,7 +88,9 @@ app.use(express.urlencoded({extended:true}));
 //     }
 // ]
 
-app.use(router)
+app.use(productRouter)
+app.use(reviewRouter)
+
 
 app.listen(8000,()=>{
     console.log("app started at 8000 succesfully");
